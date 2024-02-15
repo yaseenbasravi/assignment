@@ -1,0 +1,150 @@
+﻿body {
+    background-image: url('Image/ingredients-soup-with-meatballs-vegetables-food-background-copy-space_127032-2974.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #fff3e4;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    flex-wrap: wrap; /* Wrap the cards on smaller screens */
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 20px auto; /* Adjust as per your header/footer height */
+    gap: 30px
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    min-width: 350px;
+    max-width: calc(50% - 15px);
+    align-items: stretch;
+    margin: 15px; /* Consistent margin for both cards */
+    flex-grow: 0; 
+    flex-shrink: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content */
+    height: 100%; /* Take up full height of the card */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #e67e22;
+    margin: 0 0 20px 0;
+}
+
+h1 {
+    font-size: 25px; /* Adjusted for smaller screens */
+}
+
+h2 {
+    font-size: 25px; /* Adjusted for smaller screens */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px; /* Maintain consistent spacing */
+    flex-grow: 1;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.input, .button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input {
+    width: 100%;
+}
+
+.button {
+    background-color: #ffa726;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    text-align: center;
+}
+
+    .button:hover {
+        background-color: #fb8c00;
+    }
+
+.error-msg {
+    color: red;
+    margin-bottom: 15px;
+    min-height: 20px;
+}
+
+.learn-image {
+    width: 50%;
+    height: 180px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 100%; /* Override max-width for mobile */
+        margin-bottom: 20px; /* Space between stacked cards */
+        min-height: auto;
+    }
+}
+
+/* Link styles */
+.account-link {
+    color: #ffa726;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.join-us {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #ffa726;
+    font-size: 23px;
+    margin-top: -20px;
+}

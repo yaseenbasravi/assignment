@@ -1,0 +1,133 @@
+﻿.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    margin: 0 auto; /* Center the cards container */
+    overflow: hidden;
+}
+
+.white-card,
+.blue-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 600px; /* Fixed height to ensure both cards are the same */
+    padding: 20px;
+    position: relative;
+}
+
+/* Headings styling */
+h1, h2 {
+    text-align: center;
+    color: #e67e22;
+    font-weight: bold;
+
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #f39c12;
+    margin-bottom: 1em;
+}
+
+/* Button styling */
+.button,
+.login-button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #e67e22;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%; /* Adjust the width to fit the text on one line */
+    white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+
+
+    .button:hover,
+    .login-button:hover {
+        background-color: #cf6d17;
+    }
+
+/* Input fields styling */
+.input {
+    width: calc(100% - 40px); /* Adjust width for padding */
+    padding: 13px;
+    border: 2px solid #eaeaea;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+    .input:focus {
+        border-color: #F4BB44;
+        box-shadow: 0 0 8px 0 rgb(255, 213, 128,0.5);
+    }
+
+.error-msg {
+    color: #d9534f;
+    border-radius: 5px;
+    display: block; /* Always display the block, even when empty */
+    width: 100%;
+    text-align: center; /* Center the text in the error message */
+    height: 50px; /* Reserve space for the error message */
+    overflow: hidden; /* Hide the content when there is no error message */
+    margin-bottom: 20px; /* Space between error message and form fields */
+    visibility: hidden;
+}
+
+    /* This will only show the error message if there is text inside it */
+    .error-msg:not(:empty) {
+        display: block;
+        margin-bottom: 20px; /* Space between error message and form fields */
+        visibility: visible;
+    }
+
+/* Recipe image styling */
+.recipe-image {
+    max-width: 90%; /* Adjust the max-width to avoid the image being covered by the button */
+    height: auto;
+    margin: 20px auto 40px; /* Adjust the bottom margin to ensure space between image and button */
+}
+
+
+.form-group {
+    margin-top: 0; /* Reduce space above the text boxes */
+}
+
+body, html {
+    background-image: url('Image/ingredients-soup-with-meatballs-vegetables-food-background-copy-space_127032-2974.jpg'); /* Replace with your actual image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image in the viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100%; /* Set the body and html to 100% of the viewport height */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    margin: 0; /* Remove default margin */
+}
+
+.registration-form {
+    padding-bottom: 800px; /* Add padding to bottom to ensure space for the button */
+}
+
